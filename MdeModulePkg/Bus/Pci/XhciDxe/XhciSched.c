@@ -1193,7 +1193,7 @@ XhcCheckUrbResult (
         goto EXIT;
 
       case TRB_COMPLETION_USB_TRANSACTION_ERROR:
-        CheckedUrb->Result  |= EFI_USB_ERR_TIMEOUT;
+        CheckedUrb->Result  |= EFI_USB_ERR_TRANSACTION;
         CheckedUrb->Finished = TRUE;
         DEBUG ((DEBUG_ERROR, "XhcCheckUrbResult: TRANSACTION_ERROR! Completecode = %x\n", EvtTrb->Completecode));
         goto EXIT;

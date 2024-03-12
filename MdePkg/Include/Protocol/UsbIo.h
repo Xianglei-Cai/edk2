@@ -50,16 +50,17 @@ typedef enum {
 //
 // USB Transfer Results
 //
-#define EFI_USB_NOERROR         0x00
-#define EFI_USB_ERR_NOTEXECUTE  0x01
-#define EFI_USB_ERR_STALL       0x02
-#define EFI_USB_ERR_BUFFER      0x04
-#define EFI_USB_ERR_BABBLE      0x08
-#define EFI_USB_ERR_NAK         0x10
-#define EFI_USB_ERR_CRC         0x20
-#define EFI_USB_ERR_TIMEOUT     0x40
-#define EFI_USB_ERR_BITSTUFF    0x80
-#define EFI_USB_ERR_SYSTEM      0x100
+#define EFI_USB_NOERROR          0x00
+#define EFI_USB_ERR_NOTEXECUTE   0x01
+#define EFI_USB_ERR_STALL        0x02
+#define EFI_USB_ERR_BUFFER       0x04
+#define EFI_USB_ERR_BABBLE       0x08
+#define EFI_USB_ERR_NAK          0x10
+#define EFI_USB_ERR_CRC          0x20
+#define EFI_USB_ERR_TIMEOUT      0x40
+#define EFI_USB_ERR_BITSTUFF     0x80
+#define EFI_USB_ERR_SYSTEM       0x100
+#define EFI_USB_ERR_TRANSACTION  0x200
 
 /**
   Async USB transfer callback routine.
