@@ -2510,5 +2510,9 @@
   # @Prompt Memory encryption attribute
   gEfiMdePkgTokenSpaceGuid.PcdConfidentialComputingGuestAttr|0|UINT64|0x0000002e
 
+  ## This dynamic PCD indicates time delay for XHCI registers access after it issues HCRST.
+  # @Prompt Delay access XHCI register after it issues HCRST (us)
+  gEfiMdePkgTokenSpaceGuid.PcdDelayXhciHCReset|2000|UINT16|0x00000043
+
 [UserExtensions.TianoCore."ExtraFiles"]
   MdePkgExtra.uni
